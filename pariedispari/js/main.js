@@ -3,7 +3,7 @@
 // Sommiamo i due numeri e dichiariamo chi ha vinto.
 
 // chiedo all'utente di inserire un numero da 1 a 5
-var usernum = prompt("inserisci un numero da 1 a 5");
+var usernum = parseInt(prompt("inserisci un numero da 1 a 5"));
 var userscelta = prompt("scegli tra pari e dispari");
 
 //faccio inserire un numero al pc in modo random
@@ -11,12 +11,20 @@ var pc = 5;//inserisco io per ora per provare
 
 var final = paridispari(usernum,pc);
 
-console.log(final);
+if (final === userscelta) {
+  console.log("hai vinto");
+}
+else{
+  console.log("hai perso");
+}
+
 
 //funzione
 function paridispari(num1,num2) {
+var somma = 0;
 var result;
-var somma = num1 + num2;
+somma = num1 + num2;
+console.log(somma);
 
 //verifico se la somma è pari o dispari
 if (somma % 2 === 0) {
