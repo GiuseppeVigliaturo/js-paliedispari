@@ -37,7 +37,7 @@ if (somma % 2 === 0) {
   result = "pari";
 }
 else {
-  result = "dispari";
+  result = "dispari";//oppure facevo direttamente return "dispari"
 }
 return result;
 }

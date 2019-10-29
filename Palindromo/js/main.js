@@ -21,6 +21,7 @@ function reverseString(str) {
   //tasformo la stringa in array
   var strArr = str.split("");
   // inverto l'array creato
+
   var reverseStrArray = strArr.reverse();
   //unisco i vari elementi di un array per riformare una stringa
   var reversedString = reverseStrArray.join("");
